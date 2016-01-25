@@ -1,0 +1,75 @@
+﻿@font-face{
+    font-family: 'SHOWG';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('../fonts/SHOWG.TTF') format('truetype');
+}
+
+/** div {border:1px solid red ;} **/
+
+.gauche { 
+	position: absolute;
+	border:10px solid #990000 ;
+	border-radius:30px ;
+    top: 200px;
+	width:250px ;
+	height:400px ;
+	margin:auto ;
+	float:left ;} 
+	
+
+.droite {
+	position: absolute;
+	border:10px solid #990000 ;
+	border-radius:30px ;
+    top: 200px;
+	width:250px ;
+	height:400px ;
+	right:250px ;
+	float:right ;} 
+
+body { background-image:url(../img/paper.jpg) ;
+	background-position: center; 
+    background-size:cover; }
+
+#main { margin-top:-30px ; }
+
+.cadre {
+	margin-top:100px ;
+	margin-left:400px ; }
+
+.titre {
+	font-family:'SHOWG';
+	font-size:50px ;
+	font-weight: 900;
+	color:#2C86DE ;	
+	text-shadow: 2px 2px grey;	 	}
+	
+.normal {
+	font-family:'SHOWG';
+	font-size:28px ;
+	font-weight: 900;
+	color:#2C86DE ;	
+	text-shadow: 1px 1px grey;	
+	}
+#score1, #score2 {	font-size:50px ;
+ } 
+
+#grille {
+	float:both ;
+	margin:auto;
+	padding-left:20px;
+	background-image:url(../img/grille_fond.png) ;
+	width: 490px;
+	background-position: center; 
+    background-size:cover;	
+}
+
+.col-3 {
+	width:160px ;
+	height:160px ;
+	float:left ;
+	font-size:100px ;
+}
+

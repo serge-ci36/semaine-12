@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <title>Morpion </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/phones.css">
+	<link rel="shortcut icon" type="image/png" href="img/morpion.png" />
+</head>
+
+<body >
+
+	<div class="container-fluid titre"> 
+		<center> 
+			<img src="img/morpion.png"  class="animated infinite tada"/>
+			<span  id="titre" class=" animated  tada">Affronte Léon le morpion !</span> 
+		</center>  
+	</div>
+	
+	<div class="container-fluid score"> 
+	
+		<div class="gauche"> <center><img src="img/score_leon.png" name="score_leon" class="animated infinite pulse"/> <div id="score1" class="normal"></div> 
+		<span  class="titre" class=" animated  tada">léon</span> 
+		</center></div>
+		
+		<div class="droite"><center> <img src="img/score_dede.png" name="score_dede" class="animated infinite pulse"/> <div id="score2" class="normal"></div>
+		<span  class="titre" class=" animated  tada">dédé</span> 
+		</center></div>
+	</div>
+	
+	
+	
+	<div id="main" class="container-fluid">
+	
+		<div id="grille" class="animated fadeIn">
+			<div class="row">
+			
+				<center>
+					<div id="x1y1" class="col-3">	
+						<a  onclick="joue(1, x1y1)"><img src="img/case_vide.png" name="x1y1" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+				<center>
+					<div id="x2y1" class="col-3">
+						<a  onclick="joue(2, x2y1)"><img src="img/case_vide.png" name="x2y1" class="croixrond animated infinite pulse"/></a>				
+					</div>
+				</center>
+				
+				<center>
+					<div id="x3y1" class="col-3">	
+						<a  onclick="joue(3, x3y1)"><img src="img/case_vide.png" name="x3y1" class="croixrond animated infinite pulse"/></a>	
+					</div>
+				</center>
+				
+			</div>
+			<div class="row">
+			
+				<center>
+					<div id="x1y2"  class="col-3">	
+						<a  onclick="joue(4, x1y2)"><img src="img/case_vide.png" name="x1y2" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+				<center>
+					<div id="x2y2"  class="col-3">	
+						<a  onclick="joue(5, x2y2)"><img src="img/case_vide.png" name="x2y2" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+				<center>
+					<div id="x3y2"  class="col-3">	
+						<a  onclick="joue(6, x3y2)"><img src="img/case_vide.png" name="x3y2" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+			</div>
+			<div class="row">
+			
+				<center>
+					<div id="x1y3"  class="col-3">	
+						<a  onclick="joue(7, x1y3)"><img src="img/case_vide.png" name="x1y3" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+				<center>
+					<div id="x2y3"  class="col-3">	
+						<a  onclick="joue(8, x2y3)"><img src="img/case_vide.png" name="x2y3" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+				<center>
+					<div id="x3y3"  class="col-3">	
+						<a  onclick="joue(9, x3y3)"><img src="img/case_vide.png" name="x3y3" class="croixrond animated infinite pulse"/></a>
+					</div>
+				</center>
+				
+			</div>
+		</div>
+		
+	
+	</div>
+
+	
+	<center><div id="affichage2" class="container-fluid normal"></div></center>
+
+	<div class="container-fluid animated fadeIn" id="affichage1"> 
+		<center>
+			
+			<img src="img/vide.png" name="pil" class="animated infinite pulse"/>
+			
+			<img src="img/vide.png" name="leon" class="animated infinite tada"/>
+			
+			<a onclick="reset()" id="reset"><img src="img/vide.png" name="rejouer" class="animated infinite tada"/></a> 
+		
+			<img src="img/vide.png" name="dede" class="animated infinite tada"/>
+			
+			<img src="img/vide.png" name="pir" class="animated infinite pulse"/>
+			
+		</center>  
+	</div>
+
+	
+	
+
+<script src="js/script_phones.js"></script>
+	
+	
+	
+</body>
+
+</html>
+
+
+
